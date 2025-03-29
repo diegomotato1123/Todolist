@@ -1,0 +1,129 @@
+/* CreateTaks.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .filter-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .filter-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-btn:hover {
+    background-color: #bbb;
+  }
+  
+  .filter-btn.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Estilo de las tareas */
+  .task-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilo cuando la tarea está completada */
+  .task-item.completed {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+    opacity: 0.7;  /* Da un efecto de desvanecimiento */
+  }
+  
+  .task-item:hover {
+    background-color: #f4f4f4;
+  }
+  
+  .task-item:active {
+    background-color: #e0ffe0;
+  }
+  
+  /* Botón de eliminar */
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ff3333;
+  }
+  
+  /* Efectos visuales */
+  .task-item.completed .delete-btn {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Filtro de botones */
+  .filter-btn {
+    padding: 10px 20px;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter-btn:hover {
+    background-color: #bbb;
+  }
+  
+  .filter-btn.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
