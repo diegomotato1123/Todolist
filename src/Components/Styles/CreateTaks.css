@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+
+body {
+  background-color: #161616;
+  font-family: 'Reggae One', cursive;
+  color: #fff;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #ff0000, #ffcc00, #008000); /* Rojo, amarillo, verde */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Título */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Campos de entrada */
+input, textarea {
+  width: 94%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  border: 2px solid #008000;
+}
+
+/* Botón de agregar */
+button {
+  padding: 12px 20px;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff9900;
+}
+
+/* Botones de filtro */
+.filter-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.filter-btn {
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #008000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  background: #00cc00;
+}
+
+.filter-btn.active {
+  background: #ffcc00;
+  color: black;
+}
+
+/* Estilo de las tareas */
+.task-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #ffcc00;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  background: rgba(255, 204, 0, 0.3);
+}
+
+/* Tareas completadas */
+.task-item.completed {
+  background: rgba(0, 128, 0, 0.8);
+  text-decoration: line-through;
+  opacity: 0.7;
+  border: 2px solid #008000;
+}
+
+/* Botón de eliminar */
+.delete-btn {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Estilo del botón eliminar para tareas completadas */
+.task-item.completed .delete-btn {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+/* Efecto de transición para la tarea */
+.task-item {
+  transition: all 0.3s ease-in-out;
+}
